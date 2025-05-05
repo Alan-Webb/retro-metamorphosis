@@ -15,8 +15,8 @@
 	--hover-shadow-color: #023e8a;
 	--text-color-1: #fff;
 	--text-color-2: #000;
-	--alan-text-color: #cfff04;
-	--webb-text-color: #ffd5ff;
+	--retro-text-color: #cfff04;
+	--metamorphosis-text-color: #ffd5ff;
 	--vhs-bg-color: #2b52ff;
 	--vhs-rec-flicker-1: #ffffff99;
 	--vhs-rec-flicker-2: #ffffebb3;
@@ -27,7 +27,7 @@
 	--vhs-rec-flicker-7: #3b00e2cc;
 	--primary-font: "Exo2";
 	--secondary-font: "Press Start 2P";
-	--webb-font: "Monoton";
+	--metamorphosis-font: "Monoton";
 }
 
 body {
@@ -85,18 +85,27 @@ button:active {
 
 .nav-brand {
 	position: absolute;
-	top: 1.5rem;
-	left: 1.5rem;
+	top: 0.5rem;
+	left: 1rem;
+}
+
+.brand-img {
+	width: 3rem;
 }
 
 .brand {
 	display: inline;
-	margin-left: 0.5rem;
+	position: absolute;
+	left: 4rem;
+	top: 0.65rem;
+	font-style: italic;
+	font-size: 0.75rem;
 }
 
 .nav-menu {
 	display: flex;
 	gap: 2rem;
+	margin-left: 8rem;
 }
 
 .nav-menu li {
@@ -196,36 +205,36 @@ button:active {
 	font-size: 6rem;
 	font-weight: 200;
 	font-style: italic;
-	color: var(--alan-text-color);
+	color: var(--retro-text-color);
 	position: absolute;
 	top: -2rem;
 	left: -16rem;
 	transform: rotate(-15deg);
-	animation: flicker-alan 1.5s infinite alternate;
+	animation: flicker-retro 1.5s infinite alternate;
 }
 
 .metamorphosis {
-	font-family: var(--webb-font), sans-serif;
-	font-size: 8rem;
+	font-family: var(--metamorphosis-font), sans-serif;
+	font-size: 4rem;
 	font-weight: 400;
-	color: var(--webb-text-color);
+	color: var(--metamorphosis-text-color);
 	position: absolute;
-	top: 2rem;
+	top: 6rem;
 	letter-spacing: 8px;
-	text-shadow: 1px 0px 4px var(--webb-text-color),
-		2px 0px 4px var(--webb-text-color), 3px 0px 4px var(--webb-text-color),
-		2px 0px 3px var(--text-shadow), 2px 3px 15px var(--text-shadow),
-		2px 0px 15px, 5px 0px 125px, 20px 0vw 200px var(--text-shadow),
-		40px 0vw 200px var(--text-shadow);
+	text-shadow: 1px 0px 4px var(--metamorphosis-text-color),
+		2px 0px 4px var(--metamorphosis-text-color),
+		3px 0px 4px var(--metamorphosis-text-color), 2px 0px 3px var(--text-shadow),
+		2px 3px 15px var(--text-shadow), 2px 0px 15px, 5px 0px 125px,
+		20px 0vw 200px var(--text-shadow), 40px 0vw 200px var(--text-shadow);
 	z-index: 1;
 }
 
 .flicker-slow {
-	animation: flicker-webb 3s linear infinite;
+	animation: flicker-metamorphosis 3s linear infinite;
 }
 
 .flicker-fast {
-	animation: flicker-webb 1s linear infinite;
+	animation: flicker-metamorphosis 1s linear infinite;
 }
 
 /* Icons */
@@ -267,7 +276,7 @@ button:active {
 /* ABOUT */
 .about-container {
 	background-color: var(--vhs-bg-color);
-	color: var(--alan-text-color);
+	color: var(--retro-text-color);
 	font-family: var(--secondary-font), sans-serif;
 	position: relative;
 	display: flex;
@@ -303,7 +312,7 @@ button:active {
 .about-img {
 	width: 350px;
 	margin: 0 2rem 10rem 2rem;
-	box-shadow: 0 0 0 5px var(--alan-text-color);
+	box-shadow: 0 0 0 5px var(--retro-text-color);
 	animation: animate-border 5s ease-in-out infinite;
 	transform: all 1s ease-in-out;
 }
@@ -320,7 +329,7 @@ button:active {
 .vhs-text,
 .rec-text {
 	position: absolute;
-	color: var(--alan-text-color);
+	color: var(--retro-text-color);
 	font-size: 2rem;
 	z-index: 1;
 }
@@ -337,8 +346,8 @@ button:active {
 	animation: vhsText 1s steps(9) 0s infinite alternate;
 }
 
-/* PROJECTS */
-.projects {
+/* Services */
+.services {
 	background-color: var(--primary-light);
 	color: var(--text-color-2);
 	display: flex;
@@ -348,13 +357,13 @@ button:active {
 	margin-bottom: 6.5rem;
 }
 
-.project-container {
+.services-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-.project-card {
+.services-card {
 	position: relative;
 	width: 28rem;
 	height: 32rem;
@@ -366,7 +375,7 @@ button:active {
 	transition: all 0.8s ease-in-out;
 }
 
-.project-card:hover {
+.services-card:hover {
 	transform: translateY(-20px);
 }
 
@@ -402,22 +411,8 @@ button:active {
 	transition: opacity 0.3s ease;
 }
 
-.project-card .img-area:hover .overlay {
+.services-card .img-area:hover .overlay {
 	opacity: 1;
-}
-
-.view-project-btn {
-	background-color: var(--primary-dark);
-	color: var(--text-color-1);
-	width: 9.375rem;
-	padding: 1rem;
-	border: 1px solid var(--highlight-color);
-	box-shadow: 1px 1px 1px var(--hover-shadow-color);
-	border-radius: 8px;
-	font-size: 1rem;
-	font-weight: bold;
-	text-transform: uppercase;
-	cursor: pointer;
 }
 
 .info {
@@ -438,58 +433,7 @@ button:active {
 	text-transform: uppercase;
 }
 
-.info hr {
-	margin: 1rem;
-}
-
-.badges {
-	display: flex;
-	gap: 1rem;
-}
-
-.badges i {
-	color: var(--primary-dark);
-	font-size: 2.85rem;
-}
-
-/* SERVICES */
-.services h2 {
-	padding-top: 5rem;
-	padding-bottom: 3rem;
-}
-
-.services-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.services-info {
-	max-width: 34.375rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	border-radius: 2rem;
-	margin: 0 2.5rem;
-	box-shadow: 0 2px 20px var(--highlight-color);
-}
-
-.services-info i {
-	font-size: 2rem;
-	padding: 1rem;
-	color: var(--primary-dark);
-}
-
-.services-text {
-	text-align: center;
-	font-size: 1.15rem;
-	font-weight: 500;
-	line-height: 1.75rem;
-	padding: 1.5rem;
-	max-width: 25rem;
-}
-
-/* Testimonial Slider */
+/* Testimonials */
 .testimonial-container {
 	width: 71%;
 	height: 40vh;
@@ -607,7 +551,7 @@ button:active {
 /* CONTACT */
 .contact-container {
 	background-color: var(--primary-dark);
-	color: var(--webb-text-color);
+	color: var(--metamorphosis-text-color);
 	font-size: 1.5rem;
 	display: flex;
 	flex-direction: column;
@@ -689,12 +633,12 @@ button.submit {
 
 .copyright {
 	font-weight: bold;
-	color: var(--alan-text-color);
+	color: var(--retro-text-color);
 	text-align: center;
 	font-size: 1.5rem;
 	padding: 1rem;
 	z-index: 1;
-	animation: flicker-alan 1.5s infinite alternate;
+	animation: flicker-retro 1.5s infinite alternate;
 	position: absolute;
 	bottom: 1.8rem;
 }
@@ -729,8 +673,8 @@ button.submit {
 }
 
 /* KEYFRAMES */
-/* Alan */
-@keyframes flicker-alan {
+/* Retro */
+@keyframes flicker-retro {
 	0%,
 	19%,
 	21%,
@@ -740,9 +684,9 @@ button.submit {
 	56%,
 	100% {
 		text-shadow: -0.2rem -0.2rem 1rem #fff, 0.2rem 0.2rem 1rem #fff,
-			0 0 2rem var(--alan-text-color), 0 0 4rem var(--alan-text-color),
-			0 0 6rem var(--alan-text-color), 0 0 8rem var(--alan-text-color),
-			0 0 10rem var(--alan-text-color);
+			0 0 2rem var(--retro-text-color), 0 0 4rem var(--retro-text-color),
+			0 0 6rem var(--retro-text-color), 0 0 8rem var(--retro-text-color),
+			0 0 10rem var(--retro-text-color);
 	}
 	20%,
 	24%,
@@ -752,8 +696,8 @@ button.submit {
 	}
 }
 
-/* Webb */
-@keyframes flicker-webb {
+/* Metamorphosis */
+@keyframes flicker-metamorphosis {
 	0%,
 	19.999%,
 	22%,
@@ -915,14 +859,14 @@ button.submit {
 		font-size: 1.5rem;
 		margin-top: 14rem;
 	}
-	.alan {
+	.retro {
 		font-size: 4rem;
 		top: 2rem;
 		left: -10rem;
 	}
-	.webb {
-		font-size: 6rem;
-		top: 4rem;
+	.metamorphosis {
+		font-size: 2rem;
+		top: 7rem;
 	}
 	.icon-heading {
 		font-size: 1.5rem;

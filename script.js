@@ -44,7 +44,7 @@ function scrollToTop() {
 
 // Typing Effect
 function runTypingEffect() {
-	const text = "Hello World! I am";
+	const text = "From old school to modern";
 	const typingElement = document.getElementById("typing-text");
 	const typingDelay = 250;
 
