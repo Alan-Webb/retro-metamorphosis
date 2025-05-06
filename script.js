@@ -59,6 +59,10 @@ function typeText(text, typingElement, delay) {
 	}
 }
 
+// Scrolling Marquee
+let currentScroll = 0;
+let isScrollingDown = true;
+
 // REC counter
 function updateCounter() {
 	let h = new Date().getHours();
