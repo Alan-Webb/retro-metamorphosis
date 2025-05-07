@@ -117,7 +117,7 @@ button:active {
 
 .nav-menu a:hover,
 .nav-right i:hover {
-	color: #ff13f0;
+	color: var(--retro-text-color);
 	transition: all 0.3s ease-in-out;
 }
 
