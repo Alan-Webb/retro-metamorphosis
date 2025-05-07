@@ -178,15 +178,27 @@ button:active {
 }
 
 .typing-text {
-	font-size: 3rem;
+	font-size: 2.5rem;
+	color: var(--retro-text-color);
+	text-shadow: var(--hover-shadow-color);
+	font-style: italic;
 	padding: 2rem;
+	margin-top: 2rem;
 }
 
-.header-role {
-	font-size: 2.5rem;
+.header-description {
+	color: var(--retro-text-color);
+	text-shadow: var(--hover-shadow-color);
+	font-size: 1.5rem;
 	font-weight: bold;
-	margin-top: 16rem;
-	padding: 1rem;
+	margin-top: 12rem;
+}
+
+.header-description p {
+	font-size: 1.25rem;
+	color: var(--text-color-1);
+	text-align: center;
+	font-style: italic;
 }
 
 /* Neon name */
@@ -207,8 +219,8 @@ button:active {
 	font-style: italic;
 	color: var(--retro-text-color);
 	position: absolute;
-	top: -2rem;
-	left: -16rem;
+	top: 1rem;
+	left: 8rem;
 	transform: rotate(-15deg);
 	animation: flicker-retro 1.5s infinite alternate;
 }
@@ -858,12 +870,12 @@ button.submit {
 		margin-top: 14rem;
 	}
 	.retro {
-		font-size: 4rem;
-		top: 2rem;
-		left: -10rem;
+		font-size: 3rem;
+		margin-top: 6rem;
+		margin-left: 2rem;
 	}
 	.metamorphosis {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		top: 7rem;
 	}
 	.icon-heading {
@@ -875,6 +887,19 @@ button.submit {
 	}
 	.tech-icon p {
 		font-size: 0.75rem;
+	}
+}
+
+@media (max-width: 992px) {
+	.retro {
+		top: -2rem;
+	}
+}
+
+@media (max-width: 1200px) {
+	.retro {
+		top: -2rem;
+		left: -0.5rem;
 	}
 }
 
