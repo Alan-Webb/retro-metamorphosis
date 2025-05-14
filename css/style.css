@@ -52,6 +52,7 @@ hr {
 	width: 8rem;
 	height: 0.125rem;
 	margin-top: 0.625rem;
+	margin-bottom: 0.75rem;
 	border: none;
 	background-color: var(--highlight-color);
 }
