@@ -729,6 +729,7 @@ button.submit {
 			0 5px 1px var(--vhs-rec-flicker-6), -5px 0 1px var(--vhs-rec-flicker-7);
 	}
 }
+
 /* VHS scanlines */
 @keyframes scanlines {
 	from {
@@ -856,10 +857,14 @@ button.submit {
 	.rec-text {
 		font-size: 1rem;
 	}
+	.about-content {
+		max-width: 32rem;
+		font-size: 0.85rem;
+	}
 }
 
 @media (max-width: 992px) {
-	.about-text {
+	.about-content {
 		margin-top: -2rem;
 	}
 	.about-container h2 {
