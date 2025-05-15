@@ -51,8 +51,7 @@ hr {
 	display: block;
 	width: 8rem;
 	height: 0.125rem;
-	margin-top: 0.625rem;
-	margin-bottom: 0.75rem;
+	margin: 1rem;
 	border: none;
 	background-color: var(--highlight-color);
 }
@@ -401,9 +400,13 @@ button:active {
 }
 
 /* Testimonials */
+.testimonials {
+	padding-top: 6rem;
+}
+
 .testimonial-container {
 	width: 71%;
-	height: 40vh;
+	height: 60vh;
 	margin: 5rem auto 2rem auto;
 	border-radius: 2rem;
 	position: relative;
