@@ -289,5 +289,5 @@ export const FOOTER_CONTENT = {
 	],
 	platformsText:
 		"Formats We Support | VHS | Cassette | Vinyl | 8-Track | Film Reels | Slides",
-	copyrightText: "© 2025 Retro Metamorphosis. All rights reserved.",
+	copyrightText: "© 2026 Retro Metamorphosis. All rights reserved.",
 };
