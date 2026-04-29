@@ -7,7 +7,7 @@ const Hero = () => {
 				<div className="px-3 py-2 rounded-full text-2xl lg:text-4xl text-yellow-400">
 					{HERO_CONTENT.tagLine}
 				</div>
-				<h1 className="text-5xl lg:text-8xl my-4 font-semibold tracking-tighter bg-gradient-to-t from-yellow-100 via-yellow-300 to-yellow-500 bg-clip-text text-transparent">
+				<h1 className="text-5xl lg:text-8xl my-4 font-semibold tracking-tighter bg-linear-to-t from-yellow-100 via-yellow-300 to-yellow-500 bg-clip-text text-transparent">
 					{HERO_CONTENT.mainHeading}
 				</h1>
 				<p className="py-8 mt-6 text-xl lg:text-2xl bg-purple-900/65 rounded-xl text-center uppercase text-yellow-400 max-w-xl">
