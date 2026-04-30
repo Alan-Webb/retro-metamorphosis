@@ -1,10 +1,16 @@
 import {useState} from "react";
-import {LINKS} from "../constants";
 import {FaTimes} from "react-icons/fa";
 import {FaBars} from "react-icons/fa6";
 
 const Navbar = () => {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+	const links = [
+		{href: "#services", label: "Services"},
+		{href: "#features", label: "Features"},
+		{href: "#pricing", label: "Pricing"},
+		{href: "#testimonials", label: "Testimonials"},
+	];
 
 	const toggleMobileMenu = () => {
 		setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -40,7 +46,7 @@ const Navbar = () => {
 
 						<div>
 							<ul className="flex items-center gap-4">
-								{LINKS.map((item, index) => (
+								{links.map((item, index) => (
 									<li key={index}>
 										<a
 											href={item.href}
@@ -76,7 +82,7 @@ const Navbar = () => {
 					</div>
 					{isMobileMenuOpen && (
 						<ul className="ml-4 mt-4 flex flex-col gap-4 backdrop-blur-md">
-							{LINKS.map((item, index) => (
+							{links.map((item, index) => (
 								<li key={index}>
 									<a
 										href={item.href}
