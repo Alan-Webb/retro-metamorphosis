@@ -81,7 +81,10 @@ const Footer = () => {
 							</p>
 						</div>
 						<div>
-							<p>© 2026 Retro Metamorphosis. All rights reserved.</p>
+							<p>
+								&copy; {new Date().getFullYear()} Retro Metamorphosis. All
+								rights reserved.
+							</p>
 						</div>
 					</div>
 				</div>
